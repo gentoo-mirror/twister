@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst
+DEPEND=dev-libs/openssl:*[-bindist] >=sys-libs/db-4.8 dev-libs/boost:0/1.56.0 net-libs/miniupnpc tk? ( || ( dev-lang/python:2.7[tk] dev-lang/python:2.6[tk] ) )
+DESCRIPTION=Peer-to-peer microblogging
+EAPI=5
+HOMEPAGE=http://twister.net.co/
+IUSE=tk
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT BSD
+RDEPEND=dev-libs/openssl:*[-bindist] >=sys-libs/db-4.8 dev-libs/boost:0/1.56.0 net-libs/miniupnpc tk? ( || ( dev-lang/python:2.7[tk] dev-lang/python:2.6[tk] ) )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/miguelfreitas/twister-core/archive/54b1d9e9a3865462257944f5010abd6d42ea28bd.tar.gz
+_eclass_exported_funcs=pkg_postinst:- src_configure:- src_compile:- src_install:-
+_eclasses_=eutils	ea170b525f6a38a006be05c9d9429f13	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
+_md5_=8ddd2b29d5026b32b3e4696dd69ea358
